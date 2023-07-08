@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        body{
+            background-color: rgb(76, 139, 242);
+        }
+        h1{ /* Box-level */
+
+            /*Cor de fundo da caixa*/
+            background-color: aqua;
+
+            /*Configuração de altura e largura da caixa*/
+            height: 300px;
+            width: 300px;
+
+            /*Configuraçãa da borda
+            border-width: 10px;
+            border-style: dashed;
+            border-color: rgb(223, 10, 10);
+            */
+
+            /* Shorhant - forma abreiviada*/
+            border: 10px dashed darkslategray;
+            
+            /*Configura de prenchimento
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            /* Shorhant - forma abreiviada*/
+            padding: 10px;
+
+            /*Configuração da margem
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: auto;
+            */
+            /*Shorthant - forma abreviada*/
+            margin: 20px auto 40px auto;
+
+            /*Configuração do contorno
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            /*Shorthant - forma abreviada*/
+            outline: 5px dashed salmon;
+        
+
+        }
+
+        a{
+            border-width: 5px;
+            border-style: solid;
+            border-color: blueviolet;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+        Parágrafos também <strong>Negrito</strong> são exemplos de box-level, mas os <a href="#">lInks são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona
+    </p>
+</body>
+</html>

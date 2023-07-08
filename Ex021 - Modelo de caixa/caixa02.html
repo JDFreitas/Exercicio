@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>/*Tag estilo do CSS*/
+        body{/*Configuração do corpo*/
+            font-family: Arial, Helvetica, sans-serif;/*Familia de fontes*/
+            background-color: dimgray;/*Cor de fundo*/
+            margin: 0px;/*Espessura da margem*/
+        }
+        header{/*tag Cabeçalho*/
+            background-color: aliceblue;/*Cor de fundo*/
+            padding: 10px;/*Espessura do Preenchimento*/
+            margin: 10px;/*Espessura da margem*/
+        }
+        nav{/*Tag de navegação*/
+            background-color: rgb(102, 102, 102);/*Cor de fundo*/
+            padding: 3px;/*Espessura do preenchimento*/
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.413);/*Caixa de sombra - DX DY Esp. cor*/
+        }
+        nav > a{/*Tag link filha de navegação*/
+            text-decoration: none;/*Decoração do texto*/
+            color: white;/*Cor do texto*/
+            font-weight: bold;/*Espessura do texto (Negrito)*/
+            margin-right: 30px;/*Espessura da margem*/
+        }
+        nav > a:hover{/*Tag link filha de navegação quando o mouse estiver sobre*/
+            text-decoration: underline;/*Decoração do texto*/
+        }
+        main{/*Tag principal*/
+            background-color: white;/*Cor de fundo*/
+            padding: 10px;/*espessura do preenchimento*/
+            margin: 10px;/*espessura da margem*/
+            border-radius: 10px 0px;/*Raio da borda*/
+            box-shadow: 4px 4px 9px 0px rgb(0, 0, 0, 0.384);/*Caixa de sombra - DX DY bor. Esp. cor*/
+        }
+        article{/*Tag artigo*/
+            background-color: lightgray;/*Cor do fundo*/
+            padding: 5px;/*espessura do preenchimento*/
+        }
+        article > aside{/*Tag aparte filha de artigo*/
+            background-color: rgb(165, 165, 165);/*cor de fundo*/
+        }
+        footer{/*Tag rodape*/
+            background-color: black;/*Cor de fundo*/
+            color: white;/*Cor do texto*/
+            text-align: center;/*Alinhamento do texto*/
+            padding: 2px 0px;/*Espessura do preenchimento 2px cima. e baixo, 0px dir e esq*/
+            margin: 0px;/*Espessura da margem*/
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--tags semanticas-->
+    <header><!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav><!--Navegação (Menu)-->
+            <a href="#">Link 01</a>
+            <a href="#">Link 02</a>
+            <a href="#">Link 03</a>
+            <a href="#">Link 04</a>
+        </nav>
+    </header>
+    <main><!--Principal-->
+        <section id="assuntos"><!--Seção-->
+            <h2>texto01 texto02 texto03</h2>
+        </section>
+        <section id="noticias">
+            <h2> Titulo seção 01</h2>
+            <article><!--Artigo-->
+                <h3>titulo artigo 02</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis animi delectus explicabo quas, nisi at expedita, libero velit minus id doloremque voluptatem ea nulla quibusdam accusantium illum vero officia?
+                </p>
+                <aside><!--Aparte-->
+                    <p>artigo escrito por</p>
+                </aside>
+            </article>
+            <article>
+                <h3>titulo artigo 02</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur id corrupti perferendis ipsam blanditiis possimus veritatis omnis porro suscipit deleniti impedit ipsum maxime illo non veniam quasi, architecto vero. Qui.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodape-->
+        <p>
+            Desenvolvido por Douglas freitas
+        </p>
+    </footer>
+</body>
+</html>

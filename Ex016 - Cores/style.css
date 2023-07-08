@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*Configurando todas as fontes*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*Configuração para o corpo*/
+body{
+    /*Configurando o gradiente*/
+    background-image: linear-gradient(to right,#725AC1 ,#8d86c9);
+}
+/*Configurando a tag main (Principal)*/
+main{
+    /*Configurando a cor de fundo*/
+    background-color: white;
+    /*Configurando arrendondamento das bordas*/
+    border-radius: 50px;
+    /*Configurando a sompra 5px pra direita 5px para baixo e a cor*/
+    box-shadow: 5px 5px 15px #8f02ec;
+    /*Configurando a largura da caixa*/
+    width: 600px;
+    /*Configurando o espaçamento da margem*/
+    padding: 10px;
+    /*Configurando a posição sempre centralizado*/
+    margin: auto;
+}
+/*Configurando o titulo*/
+h1{
+    /*comfigurando a Cor do texto*/
+    color: #242038;
+    /*comfigurando o alinhamento do texto*/
+    text-align: center;
+    text-shadow: 1px 1px 2px #422038 ;
+}
+/*comfigurando o subtitulo*/
+h2{
+    /*comfigurando a Cor do texto*/
+    color: #c29262;
+}
+
+/*Configurando as tag p (Paragrafos)*/
+p{
+    /*Configurando o alinhamento do texto*/
+    text-align: justify;
+}

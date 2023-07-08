@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+     /*configurando as tag com ID container*/   
+     #container{
+        background-image: url(img/target001.png);/*Imagem de fundo*/
+        background-color: red;/*Cor de fundo*/
+        background-size: 100% 100%;/*Tamnho do fundo*/
+
+        position: relative;/*Posição relativa da tag por padrão ja e assim*/
+        height: 96vh;/*Altura da tag 96% da tela*/
+     }  
+     /*configurando as tag com ID conteudo*/
+     #conteudo{
+        background-image: url(img/target001.png);/*Imagem de fundo*/
+        background-color: yellow;/*Cor de fundo*/
+        background-size: 100% 100%;/*Tamnho do fundo*/
+
+        position: absolute;/*Posição absoluta*/
+        height: 200px;/*altura da tag*/
+        width: 400px;/*Largura da tag*/
+        
+        left: 50%;/*Deslocamento da esquerda*/
+        top: 50%;/*Deslocamento do topo*/
+
+        transform: translate(-50%, -50%);/*Transforma tag transladar a mesma 50% para direita e 50% para cima*/
+    
+     }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

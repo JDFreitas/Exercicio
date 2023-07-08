@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+    <style>
+
+        /*Configuração do corpo*/
+        body{
+            background-image: url(img/wallpaper001.jpg);
+            /*Cor de fundo atravez de uma imagem*/
+        }   
+
+        /*Configuração da tag div com a classe quadrado*/
+        div.quadrado{
+            display: inline-block;/*O bloco da tag ficara em linha*/
+            border: 2px solid black;/*Borda espessura 2px solido e cor preta*/
+            border-radius: 10px;/*Raio da borda de 10px*/
+            width: 300px;/*Largura da tag 300px*/
+            height: 300px;/*Altura da tag 300px*/
+        }
+
+        /*Configuração da tag div com o a ID q1*/
+        div#q1{
+            background-color: skyblue;/*Cor de fundo*/
+        }
+
+        /*Configuração da tag div com o a ID q2*/
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red);
+            /*Cor de fundo no estilo gradiente com tom de cima para baixo na cor amarelo e vermelho*/
+        }
+
+        /*Configuração da tag div com o a ID q3*/
+        div#q3{
+            background-image: url('img/pattern003.png');
+            /*Cor atravéz de imagem*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>

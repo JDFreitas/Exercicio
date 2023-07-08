@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiçao dos fundos</title>
+    <style>
+        /*Configuração das div classe bloco*/
+        div.bloco{
+            background-image: url(img/wallpaper003.jpg);/*Imagem de fundo*/
+            height: 200px;/*Altura da div*/
+            border: 1px solid black;/*Borda de espessura de 1px solida e cor preta*/
+            border-radius: 10px;/*Raio da borda 10 px*/
+            margin: 20px;/*margem de 20px*/
+        }
+        
+        /*Configuração da dive com id q1*/
+        div#q1{
+            background-position: left top;
+            /*Posição da imagem partindo do canto superior esquerdo*/
+        }
+
+        /*Configuração da dive com id q2*/
+        div#q2{
+            background-position: left center;
+            /*Posição da imagem partindo do centro na esquerda*/
+        }
+
+        /*Configuração da dive com id q3*/
+        div#q3{
+            background-position: right bottom;
+            /*Posição da imagem partindo do canto inferior direito*/
+        }
+
+        /*Configuração da dive com id q4*/
+        div#q4{
+            background-position: center center;
+            /*Posição da imagem partindo do centro da imagem*/
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+</body>
+</html>
