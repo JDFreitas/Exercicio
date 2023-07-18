@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /*Configuração do titulo*/
+        h1{
+            border: 1px solid black;/*Borda de 1px de espessura solida e preta*/
+            text-align: center;/*Alinhamento do texto no centro*/
+            padding: 5px;/*Preenchimento de 5px*/
+        }
+        /*Configuração da tabela*/
+        table{
+            width: 100%; /*Largura da tabela*/
+            border: 5px solid red;/*Borda de 5px de espessura solida e vermelha*/
+            /*border-collapse: separate;  Este e a configuração padrão */
+            border-collapse: collapse;/*Configuração da borda dos dodosna tabela nesta con figuraçao ficaram junta*/
+        }
+        /*Configuração da linha*/
+        tr {
+            background-color: aquamarine;/*Cor de fundo*/
+        }
+        /*Configuração da linha com a classe cor*/
+        tr.cor{
+            background-color: yellow;/*Cor de fundo*/
+        }
+        /*Configuração do dado*/
+        td{
+            border: 1px solid black;/*Borda de 1px de espessura solida e preta*/
+            padding: 5px;/*Preenchimento de 5px*/
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+        Hirarquia de Tabelas (simples)
+        Table = Tabela
+            Table Row (tr) = Linha da tabela
+                Table Header (th) = Cabeçalho de tabela
+                Table data (td) = Dado de tabela
+    -->
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr><!--Primeira linha-->
+            <td>A1</td><!--Dados-->
+            <td>A2</td><!--Dados-->
+            <Td>A3</Td><!--Dados-->
+        </tr>
+        <tr class="cor"><!--Segunda linha-->
+            <td>B1</td><!--Dados-->
+            <td>B2</td><!--Dados-->
+            <Td>B3</Td><!--Dados-->
+        </tr>
+        <tr><!--Terceira linha-->
+            <td>C1</td><!--Dados-->
+            <td>C2</td><!--Dados-->
+            <Td>C3</Td><!--Dados-->
+        </tr>
+    </table>
+
+</body>
+</html>
