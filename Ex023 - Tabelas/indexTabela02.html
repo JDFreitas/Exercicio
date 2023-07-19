@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /*Configuração da tabela*/
+        table{
+            width: 100%;/*Largura da tabela*/
+            border-collapse: collapse;/*Bordas unidas*/
+        }
+        /*Configuração da legenda da tabela*/
+        caption{
+            font-size: 1.5em;/*Tamanho da fonte*/
+            font-weight: bold;/*Espessura da fonte (negrito)*/
+            background-color: darkgrey;/*Cor de fundo*/
+            padding: 5px; /*Preenchimento*/
+        }
+        /*Configuração dos titulos dentros da linha que esta dentro cabeçalho*/
+        /*Cabeçalho preso no topo*/
+        thead > tr > th{
+            position: sticky;/*Posição esticado*/
+            top: -1px;/*Limite do esticado da posição -1px para evidar uma abertura*/
+            background-color: gray;/*matendo a cor de fundo no efeito*/
+        }
+        /*Configuração dos dados e titulos da tabela*/
+        td, th{
+            border: 1px solid black;/*Borda 1px dse espessura solida e preta*/
+            padding: 10px;/*Preenchimento de 10px*/
+        }
+        /*Configuração das linhas dentro do corpo com seletor que selecionar elementos os elemmentos impares de um grupo*/ 
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+        /*Configuração das linhas dentro do corpo com seletor que selecionar elementos os elemmentos pares de um grupo*/ 
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
+        }
+        /*Configuração do cabaçalho da tabela e rodapé*/
+        thead, tfoot{
+            background-color: gray;/*Cor de fundo*/
+            color: white;/*Cor da fonte*/
+        }
+        /*Configuração dos dados com a classe "num"*/
+        td.num{
+            text-align: right;/*Alinhamento do texto a direita*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION  corresponde a legenda da tabela e fica na parte e cima da mesma 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População Federativa</caption>
+        <thead>
+            <tr>
+                <!-- definindo a cemantica do titulo mostrando que titulo refere-se ao dados que estão na coluna-->
+                <th scope="col">Unidade Federativa</th>
+                <!-- definindo a cemantica do titulo mostrando que titulo refere-se ao dados que estão na coluna-->
+                <!-- Aplicando o style local para definir a largura da coluna especifica-->
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <!-- definindo a cemantica do titulo mostrando que titulo refere-se ao dados que estão na linha-->
+                <th scope="row">Total de população</th>
+                <td class="num">203.062.512	</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.791.688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.609.601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.055.228</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.791.688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.609.601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.055.228</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.791.688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.609.601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.055.228</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui voluptas debitis quidem sequi, laborum impedit magni soluta, laudantium, porro dolore blanditiis mollitia dolorem animi deserunt unde? Reiciendis, eum ipsum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos totam obcaecati nisi quos reiciendis veniam minus quasi reprehenderit sint similique ratione, quidem culpa fugit hic autem amet? Ipsum, repellendus ist Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum quisquam quidem quo deserunt animi fuga eligendi iste fugiat quasi. Dignissimos ducimus molestias assumenda expedita aliquam doloribus odit et quia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odio pariatur beatae nisi obcaecati dignissimos voluptates, architecto unde enim totam nemo quae tenetur debitis, nobis ipsam fugit hic laudantium velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi perferendis itaque ipsum repellat voluptate esse illo voluptatum expedita ut, illum aliquid culpa deserunt eum, consequatur odio nam eius blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore nam dolorum adipisci saepe expedita tempora. Vero similique autem est magnam nesciunt quam perspiciatis dolore aliquam beatae doloremque. Eos, maiores!</p>
+</body>
+</html>
