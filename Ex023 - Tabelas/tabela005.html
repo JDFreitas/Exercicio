@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        /*Configurando o corpo*/
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*Configuração da fonte do corpo*/
+        }
+        /* Configuração da tabela */
+        table {
+            width: 500px;/*Largura da tabela*/
+            border-collapse: collapse;/*Borda coladas na tabela*/
+        }
+        /*Configuração da legenda*/
+        caption {
+            font-size: 1.3em;/*Tamanho da fonte*/
+            font-weight: bolder;/*Espessura do texto (negrito)*/
+            padding: 8px;/*Preenchimento*/
+        }
+
+        /*Configuração dos titulos e dados da tabela*/
+        th, td {
+            border: 1px solid black;/*Borda de espessura de 1px solida e preta*/
+            padding: 8px;/*Preenchimento de 8px*/
+        }
+        /*Configuração da classe destaque*/
+        .destaque {
+            background-color: chartreuse;/*Cor de fundo*/
+        }
+        /*Configuraçãod da tag col com classe cnome*/
+        col.cnome {
+            background-color: chartreuse;
+        }
+        /*Configuração da classe amarelo*/
+        .amarelo {
+            background-color: yellow;/*Cor de fundo*/
+        }
+        /*Configuração da classe vermelho*/
+        .vermelho {
+            background-color: red;/*Cor de fundo*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <!-- tag para agrupar colunas -->
+        <colgroup>
+            <!-- Cada col representa uma coluna na tabela -->
+            <col class="amarelo">
+            <!-- O uso do span define quantas colunas o col se refere -->
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <!-- scope uso cematico para dizer a qual dados o titulo se referese -->
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>
