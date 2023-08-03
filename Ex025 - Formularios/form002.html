@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+      div{
+        margin: 10px;
+      }
+       
+    </style>
+</head>
+<body>
+    <h1>Testando Formulario parte 02</h1>
+    <!-- formulario com sua ação enviando para um site php no metodo post com a função de auto completar ligada -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <!-- rotulo com ligação com ID idUser  -->
+            <label for="idUser">Usuario</label>
+            <input type="text" name="User" id="idUser" required minlength="5" maxlength="10" size="25" placeholder="Nome de Usuário" autocomplete="username">
+        </div>
+        <div>
+            <label for="idsenha">Senha</label>
+            <input type="password" name="senha" id="idsenha" required minlength="4" maxlength="8" size="25" placeholder="Digite aqui a sua senha" autocomplete="current-password">
+        </div>
+        <div id="botao">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
