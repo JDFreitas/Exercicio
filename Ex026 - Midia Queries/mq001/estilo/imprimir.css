@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+menu li{
+    display: none;
+}
+
+main h2{
+    padding: 20px;
+    text-align: center;
+}
+
+main p{
+    padding: 10px;
+    margin: auto;
+    text-align: justify;
+    width: 100%;   
+}
+
+article::after{
+    content: "Texto visto na impressão";
+}
