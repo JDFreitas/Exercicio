@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+*{/* Configura gerais da folha */
+    font-family: Arial, Helvetica, sans-serif;/*Tipo de fonte*/
+    font-size: 1.3em; /*Tamanho*/
+    margin: 0px; /*Zerando as margen*/
+    padding: 0px; /*Zerando o preenchimento*/
+    box-sizing: border-box; /*Incluindo a dimensão da bordas na largura e alura*/
+}
+
+/* Definindo a altura do elemento HTML para ocupar 100% da altura da viewport */
+html{
+    height: 100vh;
+}
+
+/* Estilizando o corpo do documento */
+body{
+    /* Definindo um fundo preto e uma imagem de fundo posicionada no centro e não repetida */
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilizando a seção principal do conteúdo */
+main{
+    /* Adicionando uma cor de fundo branca ligeiramente transparente */
+    background-color: rgba(255, 255, 255, 0.837);
+    /* Definindo a largura da seção principal como 90% da largura da viewport */
+    width: 90vw;
+    /* Centralizando horizontalmente a seção principal */
+    margin: auto;
+    /* Adicionando um espaçamento superior de 20px */
+    margin-top: 20px;
+    /* Arredondando os cantos da seção principal */
+    border-radius: 10px;
+    /* Adicionando um espaçamento interno de 10px */
+    padding: 10px;
+}
+
+/* Estilizando os títulos de nível 1 (h1) */
+h1{
+    /* Centralizando o texto no elemento */
+    text-align: center;
+    /* Definindo a cor do texto como branco */
+    color: white;
+    /* Definindo o tamanho da fonte */
+    font-size: 2em;
+    /* Adicionando uma sombra de texto para melhor legibilidade */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.500);
+}
+
+/* Estilizando as imagens */
+img{
+    /* Centralizando as imagens horizontalmente */
+    display: block;
+    margin: auto;
+}
+
+/* Escondendo imagens específicas por ID */
+img#phone{ display: block; }   /* Exibindo imagem com ID "phone" */
+img#tablet{ display: none; }   /* Escondendo imagem com ID "tablet" */
+img#print{ display: none; }     /* Escondendo imagem com ID "print" */
+img#pc{ display: none; }        /* Escondendo imagem com ID "pc" */
+img#tv{ display: none; }        /* Escondendo imagem com ID "tv" */
