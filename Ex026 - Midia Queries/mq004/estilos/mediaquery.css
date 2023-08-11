@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+Pequenas telas: até 600px 
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Destop: 992px até 1200px
+Grande  acima 1200px
+*/
+
+@media print {
+
+    /*Impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Os background não aparece nas impressões */
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através de mídia query';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    /* Escondendo imagens específicas por ID */
+    img#phone {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "phone" */
+    img#tablet {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tablet" */
+    img#print {
+        display: block;
+    }
+
+    /* Exibindo imagem com ID "print" */
+    img#pc {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "pc" */
+    img#tv {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tv" */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Tablete*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    /* Escondendo imagens específicas por ID */
+    img#phone {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "phone" */
+    img#tablet {
+        display: block;
+    }
+
+    /* Exibindo imagem com ID "tablet" */
+    img#print {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "print" */
+    img#pc {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "pc" */
+    img#tv {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tv" */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* Para Desktops*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    /* Escondendo imagens específicas por ID */
+    img#phone {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "phone" */
+    img#tablet {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tablet" */
+    img#print {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "print" */
+    img#pc {
+        display: block;
+    }
+
+    /* Exibindo imagem com ID "pc" */
+    img#tv {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tv" */
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Para telas grandes */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    /* Escondendo imagens específicas por ID */
+    img#phone {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "phone" */
+    img#tablet {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "tablet" */
+    img#print {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "print" */
+    img#pc {
+        display: none;
+    }
+
+    /* Escondendo imagem com ID "pc" */
+    img#tv {
+        display: block;
+    }
+
+    /* Exibindo imagem com ID "tv" */
+}
